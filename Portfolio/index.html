@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Ramsha Bilal</title>
+
+    <link rel="stylesheet" href="slick.css" />
+    <link rel="stylesheet" href="slick-theme.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--AOS Library for scroll animations-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /*a block element that moves on the screen when home page is loaded*/
+        .block {
+            width: 10%;
+            height: 8px;
+            background-color: black;
+            border-radius: 0px;
+            position: relative;
+            animation-name: square;
+            animation-duration: 4s;
+            animation-delay: 0s;
+            margin: 100px;
+            margin-top: 10px;
+            margin-bottom: 0;
+            opacity:1; 
+        }
+
+        /*key frames for the block element*/
+        @keyframes square {
+
+            0% {
+                width: 30%;
+                background-color: white;
+                left: 800px;
+                top: 150px;
+                opacity: 1;
+            }
+
+            25% {
+                background-color: silver;
+                left: 0px;
+                top: 150px;
+                width: 50%;
+                opacity: 1;
+            }
+
+            50% {
+                background-color: palevioletred;
+                left: 0px;
+                top: 150px;
+                width: 50%;
+                opacity: 1;
+            }
+            75% {
+                background-color: burlywood;
+                left: 900px;
+                top: 150px;
+                width: 20%;
+                opacity: 1;
+            }
+            85% {
+                background-color: grey;
+                left: 900px;
+                top: 0px;
+                width: 20%;
+                opacity: 1;
+            }
+
+            100% {
+                background-color: black;
+                left: 0px;
+                width:10%; 
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body style=" background-image: url(media/homebg.png);">
+    <section>
+
+
+        <!--Header=======================================================================================-->
+
+        <div class="header" style="position:sticky">
+            <!--Page Names-->
+            <!-- Took inspiration from bitdegree.org, suggested by Katie (link is here: https://www.bitdegree.org/learn/css-link-color) -->
+            <div class="links">
+                <a href="index.html" style="background-color: white; font-size: 8px;" id="Home"><img src="media/home.png" style="width:25px;" /><br />Home</a>
+                <a href="projects.html" style="background-color: white; font-size: 8px;" id="Team"><img src="media/idea.png" style="width:25px;" /><br />Projects</a>
+                <a href="contact.html" style="background-color: white; font-size: 8px;" id="About"><img src="media/contact-mail.png" style="width:25px;" /><br />Contact</a>
+                <a href="about.html" style="background-color: white; font-size: 8px;" id="About"><img src="media/user.png" style="width:25px;" /><br />Form</a>
+
+            </div>
+        </div>
+        <!-----=========================================================================================-->
+
+
+        <!---Moving block element=======================================================================-->
+        <div class="block">         </div>
+        <!-----=========================================================================================-->
+
+
+        <!--Welcome message=============================================================================-->
+        <div style="margin-bottom: 200px">
+            <h1 id="welcome" style="color:white; margin:100px;font-weight:500"></h1>
+            <p data-aos="fade-up" data-aos-duration="3000" style="color:white; margin:100px; width:650px;text-align:justify">Hello, I am Ramsha. I was born and raised in Pakistan. I am a sophomore at New York University Abu Dhabi, studying Computer Science and Interactive Media. I am passionate about software and web development and am always in search of opportunities to hone my skills. This is my portfolio: a collection of projects I have completed in my communications lab class.
+        </div>
+        <div>
+            <center>
+                <a href="#down">
+                    <img src="media/scroll.png" style="border-radius:50%; width:40px; background-color:white;" />
+                </a>
+            </center>
+        </div>
+        <!------------------------------------------------------------------------------------------------>
+    </section>
+
+    <!--Carousel of images==========================================================-->
+    <section id="down">
+
+        <div class="carousel" data-aos="zoom-out" data-aos-duration="3000">
+            <img src="media/comic.png" />
+            <img src="media/video.png" />
+            <img src="media/sound.png" />
+            <img src="media/comic2.png" />
+            <img src="media/sound2.png" />
+            <img src="media/video2.png" />
+            <img src="media/illustr1.png" />
+            <img src="media/comic3.png" />
+            <img src="media/story.png" />
+            <img src="media/comic4.png" />
+        </div>
+
+    </section>
+    <!--=====================================--------------------------------------------->
+
+
+    <!--Button to jump to next page=====================================================-->
+    <center>
+        <a href="projects.html">
+            <img src="media/scroll.png" style="border-radius:50%; width:40px; background-color:white;" />
+        </a>
+    </center>
+    <!------------------------------------------------------------------------------------->
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--JQuery Library-->
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="slick.min.js"></script>
+    
+<!--Script for carousel===================================================================-->
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+
+        });
+    </script>
+<!--===========================================================================================-->
+</body>
+</html>

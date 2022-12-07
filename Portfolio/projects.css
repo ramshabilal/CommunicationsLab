@@ -1,0 +1,62 @@
+﻿/*css for projects page*/
+body
+{
+    background-color: white ; 
+}
+
+.heading {
+    margin: 200px;
+    box-shadow: rgba(0,0,0,0.8);
+    text-align: center;
+    color: black;
+    font: 700 33px "Google Sans",Arial,sans-serif;
+    background-color: lightcoral;
+    height: 50%;
+}
+h1 {
+    font-weight: 100;
+    text-align: left;
+    padding: 50px;
+    margin-left: 40px; 
+}
+
+p {
+    font: "Google Sans", Arial,sans-serif;
+}
+
+/*uniform design for each block with smaller changes made in the html*/
+.block {
+    font: "Google Sans", Arial,sans-serif;
+    box-shadow: 4px 3px 8px 1px #969696;
+    height: 650px; 
+    margin: 0px 30px 0px 30px;  
+}
+
+/*text inside the block for each project*/
+.block-text {
+    width: 40%;
+    float: left;
+    padding: 40px;
+    padding-top:0px; 
+    text-align:justify;  
+    margin-left:20px; 
+}
+
+/*videos, images, and sound inside the blocks*/
+.block-media {
+    width: 50%;
+    margin-right: 20px;
+    position: absolute;
+    right: 10px;
+}
+
+/*button to click and view the project website*/
+.button {
+    margin: 20%;
+    border-radius: 40px;
+    text-align: center;
+    width: 50%;
+    background-color: purple;
+    
+}
+
